@@ -1,0 +1,16 @@
+[package]
+name = "spacetime-account"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+toml_edit = "0.22" # Using toml_edit to preserve comments and formatting
+clap = { version = "4.4", features = [
+    "derive",
+] } # Updated to a recent version of clap
+dirs = "5.0"
+anyhow = "1.0"
+toml = "0.8" # Added for parsing config.toml
